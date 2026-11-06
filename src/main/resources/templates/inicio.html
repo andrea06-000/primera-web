@@ -12,6 +12,18 @@
         <p>pagina armada por spring boot a las <strong th:text="${hora}">00:00:00</strong></p>
     </header>
 
+    <nav class="acciones-pagina" aria-label="Acciones de la página">
+        <a class="boton" href="/lugares/nuevo">Agregar más</a>
+        <details class="autoria">
+            <summary class="boton secundario">Elaborado por</summary>
+            <div class="datos-autoria">
+                <p><strong>Nombre:</strong> Andrea Yineth Ricera Lopez</p>
+                <p><strong>Número de ficha:</strong> 3230489</p>
+                <p><strong>Programa:</strong> ADSO</p>
+            </div>
+        </details>
+    </nav>
+
     <p class="vacio" th:if="${#lists.isEmpty(lugares)}">Todavía no hay lugares. ¡Agregue el primero!</p>
 
     <main class="tarjetas">
